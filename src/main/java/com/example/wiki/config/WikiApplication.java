@@ -1,13 +1,15 @@
-package com.example.wiki;
+package com.example.wiki.config;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 
 @SpringBootApplication
 @Slf4j
+@ComponentScan("com.example")
 public class WikiApplication {
 
     public static void main(String[] args) {
